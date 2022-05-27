@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/tailwind.js" defer></script>
+    <title>tailwind learning</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- flex container -->
+        <div class="flex items-center justify-between">
+            <!-- logo -->
+            <div class="pt-2">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <!-- menu items -->
+            <div class="hidden md:flex space-x-6 ">
+                <a href="#" class="hover:text-darkGreyishBlue">Pricihng</a>
+                <a href="#" class="hover:text-darkGreyishBlue">Product</a>
+                <a href="#" class="hover:text-darkGreyishBlue">About us</a>
+                <a href="#" class="hover:text-darkGreyishBlue">Careers</a>
+                <a href="#" class="hover:text-darkGreyishBlue">Contact us</a>
+            </div>
+
+            <a href="#" class=" hidden md:block px-6 p-3 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">get started</a>
+
+            <!-- hamburger icon  -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline:none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- hamburger menu  -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md ">
+                <a href="#">Pricing</a>
+                <a href="#">Products</a>
+                <a href="#">About us</a>
+                <a href="#">Community</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section  -->
+    <section id="hero">
+        <!-- flex container  -->
+        <div class="flex container flex-col-reverse md:flex-row items-center p-6 mx-auto mt-10 md:space-y-0">
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2 ">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left ">Sabka Saath Sabka Vikas</h1>
+
+                <p class="max-w-sm text-center text-darkGreyishBlue md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nihil!</p>
+
+                <div class="flex flex-center md:flex-left">
+                    <a href="#" class=" px-6 p-3 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">get started</a>
+                </div>
+
+            </div>
+
+            <!-- image -->
+            <div class="md:w-1/2">
+                <img src="img/illustration-intro.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section id="features">
+        <!-- flex container  -->
+        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row ">
+            <!-- kya alag hai -->
+            <div class="flex flex-col space-y-12 md:w-1/2">
+                <h2 class="max-w-md text-center font-bold text-4xl md:text-left">iski khasiat kya hai ?</h2>
+                <p class="max-w-sm text-center text-darkGreyishBlue md:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nihil reiciendis eos numquam laudantium reprehenderit aliquid dignissimos quos nisi odit!</p>
+            </div>
+            <!-- list -->
+            <div class="flex flex-col space-y-8 md:w-1/2 ">
+                <!-- list item 1 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- heading  -->
+                    <div class="round-l-full bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">01</div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">company ka progress track karo</h3>
+                        </div>
+                    </div>
+                    <h3 class="hidden mb-4 text-lg font-bold md:block">company ka progress track karo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, alias voluptas! Voluptates facilis repudiandae veniam sit, maxime illum sequi ullam nulla. A, exercitationem. Nam ex nesciunt saepe qui expedita fugiat?</p>
+                </div>
+                <!-- list item 2 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- heading  -->
+                    <div class="round-l-full bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">02</div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">Advanced Building Reports</h3>
+                        </div>
+                    </div>
+                    <h3 class="hidden mb-4 text-lg font-bold md:block">Advanced Building Reports</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, alias voluptas! Voluptates facilis repudiandae veniam sit, maxime illum sequi ullam nulla. A, exercitationem. Nam ex nesciunt saepe qui expedita fugiat?</p>
+                </div>
+                <!-- list item 3 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- heading  -->
+                    <div class="round-l-full bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">03</div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">Everything needed in one place</h3>
+                        </div>
+                    </div>
+                    <h3 class="hidden mb-4 text-lg font-bold md:block">Everything needed in one place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, alias voluptas! Voluptates facilis repudiandae veniam sit, maxime illum sequi ullam nulla. A, exercitationem. Nam ex nesciunt saepe qui expedita fugiat?</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials  -->
+    <section id="testimonials">
+
+        <div class="mx-w-6xl px-5 mx-auto mt-32 text-center">
+            <!-- heading  -->
+            <h2 class="text-4xl font-bold text-center">whats different about manage ?</h2>
+            <!-- testimonials  -->
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+
+                <!-- testimonial 1  -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 ">
+                    <img src="./img/avatar-anisha.png" class="w-16 -mt-14" alt="">
+                    <h5 class="text-lg font-bold">Anisha Li</h5>
+                    <p class="text-sm text-darkGreyishBlue">orum totam autem molestiae voluptatum optio tempora aliquam dignissimos aliquid soluta exercitationem modi doloribus voluptatibus, omnis in reiciendis similique?</p>
+                </div>
+
+                <!-- testimonial 2  -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3 ">
+                    <img src="./img/avatar-ali.png" class="w-16 -mt-14" alt="">
+                    <h5 class="text-lg font-bold">Ali Bravo</h5>
+                    <p class="text-sm text-darkGreyishBlue">orum totam autem molestiae voluptatum optio tempora aliquam dignissimos aliquid soluta exercitationem modi doloribus voluptatibus, omnis in reiciendis similique?</p>
+                </div>
+
+                <!-- testimonial 3  -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3 ">
+                    <img src="./img/avatar-richard.png" class="w-16 -mt-14" alt="">
+                    <h5 class="text-lg font-bold">Richard Watts</h5>
+                    <p class="text-sm text-darkGreyishBlue">orum totam autem molestiae voluptatum optio tempora aliquam dignissimos aliquid soluta exercitationem modi doloribus voluptatibus, omnis in reiciendis similique?</p>
+                </div>
+
+            </div>
+
+            <!-- button  -->
+            <div class="my-16">
+                <a href="#" class=" px-6 p-3 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">get started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA section  -->
+    <section class="bg-brightRed" id="cta">
+        <!-- flex container  -->
+        <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0 "></div>
+        <!-- headings  -->
+        <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"> Simplify how your team works today</h2>
+        <!-- button  -->
+        <a href="#" class=" px-6 p-3 pt-2 bg-white text-brightRed rounded-full baseline shadow-2xl ">get started</a>
+    </section>
+
+    <!-- footer  -->
+    <footer class="bg-veryDarkBlue">
+        <div class="container flex flex-col-reverse px-6 py-10 justify-between mx-auto space-y-8 md:flex-row md:space-y-0  ">
+            <!-- image & links container  -->
+            <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy 2022, All rights unreserved
+                </div>
+                <!-- logo  -->
+                <div>
+                    <img src="./img/logo-white.svg" class="h-8" alt="">
+                </div>
+                <!-- social links  -->
+                <div class="flex justify-center space-x-4">
+                    <!-- link 1  -->
+                    <a href="#">
+                        <img src="./img/icon-facebook.svg"  class="h-8" alt="">
+                    </a>
+                    <!-- link 2  -->
+                    <a href="#">
+                        <img src="./img/icon-youtube.svg"  class="h-8" alt="">
+                    </a>
+                    <!-- link 3  -->
+                    <a href="#">
+                        <img src="./img/icon-twitter.svg"  class="h-8" alt="">
+                    </a>
+                    <!-- link 4  -->
+                    <a href="#">
+                        <img src="./img/icon-pinterest.svg"  class="h-8" alt="">
+                    </a>
+                    <!-- link 5  -->
+                    <a href="#">
+                        <img src="./img/icon-instagram.svg"  class="h-8" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- list container  -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Home</a>
+                    <a href="#" class="hover:text-brightRed">Pricing</a>
+                    <a href="#" class="hover:text-brightRed">Products</a>
+                    <a href="#" class="hover:text-brightRed">About</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Careers</a>
+                    <a href="#" class="hover:text-brightRed">Community</a>
+                    <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+                </div>
+            </div>
+
+            <!-- input container  -->
+            <div class="flex flex-col justify-between">
+                <form action="">
+                    <div class="flex space-x-3">
+                        <input 
+                            type="text" 
+                            class="flex-1 px-4 rounded-full focus:outline-none"
+                            placeholder="updated in your inbox"
+                        >
+                        <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-bightRedLight focus:outline-none">Go</button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">
+                    Copyright &copy 2022, All rights unreserved
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
